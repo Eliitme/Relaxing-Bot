@@ -1,0 +1,45 @@
+{
+  "name": "quacker-bot",
+  "version": "1.0.0",
+  "description": "A multi-purpose discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "rm-logs": "rm Logs.log",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "discord",
+    "discord",
+    "bot",
+    "quacker",
+    "alliance",
+    "music",
+    "discord",
+    "bot",
+    "manage",
+    "discord",
+    "bot"
+  ],
+  "author": "Olive",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": "prettier --write"
+  }
+}
