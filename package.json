@@ -1,45 +1,66 @@
 {
-  "name": "quacker-bot",
-  "version": "1.0.0",
-  "description": "A multi-purpose discord bot",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index",
-    "rm-logs": "rm Logs.log",
-    "format": "prettier --write .",
-    "prepare": "husky install"
-  },
-  "keywords": [
-    "discord",
-    "discord",
-    "bot",
-    "quacker",
-    "alliance",
-    "music",
-    "discord",
-    "bot",
-    "manage",
-    "discord",
-    "bot"
-  ],
-  "author": "Olive",
-  "license": "MIT",
-  "dependencies": {
-    "colors": "^1.4.0",
-    "cpu-stat": "^2.0.1",
-    "discord.js": "^14.7.1",
-    "dotenv": "^16.0.3",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.4",
-    "moment-duration-format": "^2.3.2",
-    "winston": "^3.8.2"
-  },
-  "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4"
-  },
-  "lint-staged": {
-    "*.{js,json,md}": "prettier --write"
-  }
+	"name": "quacker-bot",
+	"version": "1.0.0",
+	"description": "A multi-purpose discord bot",
+	"main": "src/index.js",
+	"scripts": {
+		"watch": "nodemon -L --watch src",
+		"start": "node src/index.js",
+		"format": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"keywords": [
+		"discord",
+		"discord",
+		"bot",
+		"quacker",
+		"alliance",
+		"music",
+		"discord",
+		"bot",
+		"manage",
+		"discord",
+		"bot"
+	],
+	"author": "Olive",
+	"license": "MIT",
+	"dependencies": {
+		"@babel/register": "^7.21.0",
+		"@sapphire/discord-utilities": "^3.0.0",
+		"@sapphire/discord.js-utilities": "^6.0.2",
+		"@sapphire/fetch": "^2.4.1",
+		"@sapphire/framework": "^4.2.0",
+		"@sapphire/plugin-api": "^5.0.1",
+		"@sapphire/plugin-editable-commands": "^3.0.0",
+		"@sapphire/plugin-logger": "^3.0.1",
+		"@sapphire/plugin-subcommands": "^4.0.0",
+		"@sapphire/time-utilities": "^1.7.8",
+		"@sapphire/type": "^2.3.0",
+		"@sapphire/utilities": "^3.11.0",
+		"colors": "^1.4.0",
+		"cpu-stat": "^2.0.1",
+		"discord.js": "^14.7.1",
+		"dotenv": "^16.0.3",
+		"erela.js": "^2.4.0",
+		"jsoning": "^0.13.23",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.4",
+		"moment-duration-format": "^2.3.2",
+		"winston": "^3.8.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.21.0",
+		"@babel/plugin-transform-modules-commonjs": "^7.21.2",
+		"@babel/preset-env": "^7.20.2",
+		"@sapphire/prettier-config": "^1.4.5",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.2",
+		"nodemon": "^2.0.21",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.8.4"
+	},
+	"lint-staged": {
+		"*.{js,json,md}": "prettier --write"
+	},
+	"prettier": "@sapphire/prettier-config"
 }
